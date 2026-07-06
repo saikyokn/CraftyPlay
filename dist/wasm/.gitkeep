@@ -1,0 +1,2 @@
+# Place compiled craftyplay.wasm here for static deployment.
+# The editor loads it via fetch at runtime (same-origin, no Node.js).

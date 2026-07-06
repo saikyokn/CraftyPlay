@@ -1,0 +1,56 @@
+{
+  "version": "1.0.0",
+  "meta": {
+    "name": "Untitled World",
+    "author": "Creator",
+    "createdAt": "2026-07-06T00:00:00.000Z",
+    "updatedAt": "2026-07-06T00:00:00.000Z",
+    "description": "CraftyPlay ワールドエクスポート例"
+  },
+  "settings": {
+    "gravity": { "x": 0, "y": -9.81, "z": 0 },
+    "ambientColor": "#404050"
+  },
+  "objects": [
+    {
+      "id": "ws-001",
+      "name": "Workspace",
+      "type": "Model",
+      "parentId": null,
+      "transform": {
+        "position": { "x": 0, "y": 0, "z": 0 },
+        "rotation": { "x": 0, "y": 0, "z": 0 },
+        "scale": { "x": 1, "y": 1, "z": 1 }
+      },
+      "visible": true
+    },
+    {
+      "id": "part-001",
+      "name": "BasePlate",
+      "type": "Part",
+      "parentId": "ws-001",
+      "transform": {
+        "position": { "x": 0, "y": 0.5, "z": 0 },
+        "rotation": { "x": 0, "y": 0, "z": 0 },
+        "scale": { "x": 20, "y": 1, "z": 20 }
+      },
+      "appearance": {
+        "color": "#4a5568",
+        "material": "plastic",
+        "transparency": 0
+      },
+      "scriptId": "script-001",
+      "visible": true
+    }
+  ],
+  "scripts": [
+    {
+      "id": "script-001",
+      "name": "BasePlateScript",
+      "language": "assemblyscript",
+      "attachedTo": "part-001",
+      "source": "export function onStart(): void {}\nexport function onUpdate(deltaTime: f32): void {}"
+    }
+  ],
+  "textures": []
+}
